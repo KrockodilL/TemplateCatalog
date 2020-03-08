@@ -1,0 +1,27 @@
+# Template information section
+name: "viper"
+summary: "Swift VIPER module"
+author: "Oleg Sinev"
+version: "1.0"
+license: "MIT"
+
+# The declarations for code files
+
+code_files:
+# Contract
+- {name: Contract/Contract.swift, path: Code/Contract/contract.swift.liquid}
+
+# View layer
+- {name: View/ViewController.swift, path: Code/View/viewcontroller.swift.liquid}
+
+# Presenter layer
+- {name: Presenter/Presenter.swift, path: Code/Presenter/presenter.swift.liquid}
+
+# Interactor layer
+- {name: Interactor/Interactor.swift, path: Code/Interactor/interactor.swift.liquid}
+
+# Router layer
+- {name: Router/Router.swift, path: Code/Router/router.swift.liquid}
+
+# Builder
+- {name: Builder/Builder.swift, path: Code/Builder/builder.swift.liquid}

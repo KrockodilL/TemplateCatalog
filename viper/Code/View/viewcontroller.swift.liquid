@@ -1,0 +1,37 @@
+//
+//  {{ prefix }}{{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+import UIKit
+
+class {{ module_info.name }}ViewController: UIViewController {
+
+    // MARK: - Subviews
+
+    // MARK: - Properties
+    let output: {{ module_info.name }}ViewOutput
+
+    // MARK: - Init
+    init(output: {{ module_info.name }}ViewOutput) {
+        self.output = output
+        super.init(nibName: nil, bundle: nil)
+    }
+
+    @available(*, unavailable)
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
+    // MARK: Life cycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+
+}
+
+// MARK: - {{module_info.name}}ViewInput
+extension {{ module_info.name }}ViewController: {{module_info.name}}ViewInput {}
