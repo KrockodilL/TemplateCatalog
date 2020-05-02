@@ -1,7 +1,7 @@
 # Template information section
 name: "viper"
-summary: "viper Swift codegen"
-author: "Oleg Sinev"
+summary: "Swift VIPER module template with UIViewController playing as a View."
+author: "Bogdan Kostyuchenko"
 version: "1.0"
 license: "MIT"
 
@@ -25,6 +25,12 @@ code_files:
 
 # Service
 - {name: Service/Service.swift, path: viper/Code/Service/service.swift.liquid}
+
+# Service protocol
+- {name: Service/ServiceProtocol.swift, path: viper/Code/Service/serviceProtocol.swift.liquid}
+
+# QueryBuilder
+- {name: Service/QueryBuilders/QueryBuilder.swift, path: viper/Code/Service/QueryBuilders/queryBuilder.swift.liquid}
 
 # Builder
 - {name: Builder/Builder.swift, path: viper/Code/Builder/builder.swift.liquid}

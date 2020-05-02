@@ -1,5 +1,4 @@
 //
-
 //  {{ prefix }}{{ module_info.file_name }}
 //  {{ module_info.project_name }}
 //
@@ -7,12 +6,4 @@
 //  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
 //
 
-import UIKit
-
-final class {{ module_info.name }}Router {
-
-    weak var view: UIViewController?
-
-}
-
-extension {{ module_info.name }}Router: {{ module_info.name }}RouterInput {}
+class {{ module_info.name }}Service: {{ module_info.name }}ServiceProtocol {}

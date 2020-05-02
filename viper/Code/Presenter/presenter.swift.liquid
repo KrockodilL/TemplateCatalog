@@ -10,13 +10,11 @@ class {{ module_info.name }}Presenter {
 
     // MARK: - Protocol properties
     weak var view: {{ module_info.name }}ViewInput?
-    private let interactor: {{ module_info.name }}InteractorInput
-    private let router: {{ module_info.name }}RouterInput
+    let interactor: {{ module_info.name }}InteractorInput
 
     // MARK: - Init
-    init(interactor: {{ module_info.name }}InteractorInput, router: {{ module_info.name }}RouterInput) {
+    init(interactor: {{ module_info.name }}InteractorInput) {
         self.interactor = interactor
-	self.router = router
     }
 
 }

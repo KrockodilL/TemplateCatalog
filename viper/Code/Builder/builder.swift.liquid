@@ -9,9 +9,9 @@
 final class {{ module_info.name }}Builder: {{ module_info.name }}BuilderProtocol {
 
     static func build() -> {{ module_info.name }}ViewController {
-        let interactor = {{ module_info.name }}Interactor()
 	let router = {{ module_info.name }}Router()
-        let presenter = {{ module_info.name }}Presenter(interactor: interactor, router: {{ module_info.name }}RouterInput)
+        let interactor = {{ module_info.name }}Interactor()
+        let presenter = {{ module_info.name }}Presenter(interactor: interactor)
         let viewController = {{ module_info.name }}ViewController(output: presenter)
 
 	router.view = viewController
