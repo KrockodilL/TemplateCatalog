@@ -29,8 +29,5 @@ code_files:
 # Service protocol
 - {name: Service/ServiceProtocol.swift, path: viper/Code/Service/serviceProtocol.swift.liquid}
 
-# QueryBuilder
-- {name: Service/QueryBuilders/QueryBuilder.swift, path: viper/Code/Service/QueryBuilders/queryBuilder.swift.liquid}
-
 # Builder
 - {name: Builder/Builder.swift, path: viper/Code/Builder/builder.swift.liquid}
