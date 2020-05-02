@@ -1,0 +1,24 @@
+# Template information section
+name: "mvp"
+summary: "MVP module template in pure Swift"
+author: "Oleg @sirsviblovo"
+version: "1.0"
+license: "MIT"
+
+# The declarations for code files
+
+code_files:
+# Contract
+- {name: Contract/Contract.swift, path: mvp/Code/Contract/contract.swift.liquid}
+
+# View layer
+- {name: View/ViewController.swift, path: mvp/Code/View/viewcontroller.swift.liquid}
+
+# Presenter layer
+- {name: Presenter/Presenter.swift, path: mvp/Code/Presenter/presenter.swift.liquid}
+
+# Router layer
+- {name: Router/Router.swift, path: mvp/Code/Router/router.swift.liquid}
+
+# Builder
+- {name: Builder/Builder.swift, path: mvp/Code/Builder/builder.swift.liquid}

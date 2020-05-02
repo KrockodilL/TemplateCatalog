@@ -1,11 +1,9 @@
 # Template information section
 name: "viper"
-summary: "Swift VIPER module template with UIViewController playing as a View."
-author: "Bogdan Kostyuchenko"
+summary: "VIPER module template in pure Swift."
+author: "Oleg @sirsviblovo"
 version: "1.0"
 license: "MIT"
-
-# The declarations for code files
 
 code_files:
 # Contract
@@ -28,9 +26,6 @@ code_files:
 
 # Service protocol
 - {name: Service/ServiceProtocol.swift, path: Code/Service/serviceProtocol.swift.liquid}
-
-# QueryBuilder
-- {name: Service/QueryBuilders/QueryBuilder.swift, path: Code/Service/QueryBuilders/queryBuilder.swift.liquid}
 
 # Builder
 - {name: Builder/Builder.swift, path: Code/Builder/builder.swift.liquid}

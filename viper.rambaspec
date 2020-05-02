@@ -1,11 +1,9 @@
 # Template information section
 name: "viper"
-summary: "Swift VIPER module template with UIViewController playing as a View."
-author: "Bogdan Kostyuchenko"
+summary: "VIPER module template in pure Swift."
+author: "Oleg @sirsviblovo"
 version: "1.0"
 license: "MIT"
-
-# The declarations for code files
 
 code_files:
 # Contract

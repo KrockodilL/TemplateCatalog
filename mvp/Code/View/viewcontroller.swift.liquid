@@ -8,7 +8,7 @@
 
 import UIKit
 
-class {{ module_info.name }}ViewController: UIViewController {
+final class {{ module_info.name }}ViewController: UIViewController {
 
     // MARK: - Subviews
 
@@ -29,10 +29,11 @@ class {{ module_info.name }}ViewController: UIViewController {
     // MARK: Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        configure()
+        addSubviews()
     }
 
-
-    // MARK: Layout
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
 
