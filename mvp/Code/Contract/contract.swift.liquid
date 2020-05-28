@@ -12,8 +12,12 @@ protocol {{ module_info.name }}BuilderProtocol: class {
 }
 
 // MARK: - View
-protocol {{ module_info.name }}ViewInput: class {}
-protocol {{ module_info.name }}ViewOutput {}
+protocol {{ module_info.name }}ViewInput: class {
+    func setupTableView(with models: [<#name#>])
+}
+protocol {{ module_info.name }}ViewOutput {
+    func viewDidLoad()    
+}
 
 // MARK: - Router
 protocol {{ module_info.name }}RouterInput {}

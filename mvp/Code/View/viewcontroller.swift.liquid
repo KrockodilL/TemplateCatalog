@@ -32,6 +32,7 @@ final class {{ module_info.name }}ViewController: UIViewController {
 
         configure()
         addSubviews()
+        output.viewDidLoad()
     }
 
     override func viewWillLayoutSubviews() {
@@ -56,4 +57,10 @@ final class {{ module_info.name }}ViewController: UIViewController {
 }
 
 // MARK: - {{module_info.name}}ViewInput
-extension {{ module_info.name }}ViewController: {{module_info.name}}ViewInput {}
+extension {{ module_info.name }}ViewController: {{module_info.name}}ViewInput {
+
+    func setupTableView(with models: [<#name#>]) {
+
+    }
+
+}
